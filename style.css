@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
    margin: 0; 
    padding: 0;
@@ -7,12 +8,33 @@ html, body{
     height: 100%;
 }
 body{
-    display: grid;
     place-items: center;
     background: radial-gradient(#17c47380, #00000075), url(https://wallpaperaccess.com/full/1635655.jpg);
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
+}
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-img{
+    width: 7rem;
+    background: #000d4a;
+    border-radius: 64%;
+    margin-right: 35px;
+}
+.main-title{
+    color: #004eff;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    display: inline;
+}
+.main-title span{
+    color: #ff0000;
 }
 .clock{
     display: flex;
@@ -23,6 +45,11 @@ body{
     width: 20rem;
     border-radius: 50%;
     box-shadow: -3px -3px 40px #ffffff73, 3px 3px 5px rgba(94,104,121,0.288);
+    margin: 70px auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 .clock:before{
     position: absolute;
